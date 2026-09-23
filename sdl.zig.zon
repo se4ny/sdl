@@ -1,0 +1,470 @@
+.{
+    .common = .{
+        // Atomic
+        "atomic/SDL_atomic.c",
+        "atomic/SDL_spinlock.c",
+
+        // Audio
+        "audio/dummy/SDL_dummyaudio.c",
+        "audio/disk/SDL_diskaudio.c",
+        "audio/SDL_audio.c",
+        "audio/SDL_audiocvt.c",
+        "audio/SDL_audioqueue.c",
+        "audio/SDL_audioresample.c",
+        "audio/SDL_audiotypecvt.c",
+        "audio/SDL_mixer.c",
+        "audio/SDL_wave.c",
+        // TODO...
+
+        // Camera
+        "camera/SDL_camera.c",
+        "camera/dummy/SDL_camera_dummy.c",
+        // TODO ...
+
+        // Core
+        "core/SDL_core_unsupported.c",
+
+        // CPU Info
+        "cpuinfo/SDL_cpuinfo.c",
+
+        // Dialog
+        "dialog/SDL_dialog.c",
+        "dialog/SDL_dialog_utils.c",
+        "dialog/dummy/SDL_dummydialog.c",
+
+        // Dynapi
+        "dynapi/SDL_dynapi.c",
+
+        // Events
+        "events/SDL_categories.c",
+        "events/SDL_clipboardevents.c",
+        "events/SDL_displayevents.c",
+        "events/SDL_dropevents.c",
+        "events/SDL_events.c",
+        "events/SDL_eventwatch.c",
+        "events/SDL_keyboard.c",
+        "events/SDL_keymap.c",
+        "events/SDL_keysym_to_keycode.c",
+        "events/SDL_keysym_to_scancode.c",
+        "events/SDL_mouse.c",
+        // "events/SDL_notificationevents.c",
+        "events/SDL_pen.c",
+        "events/SDL_quit.c",
+        "events/SDL_scancode_tables.c",
+        "events/SDL_touch.c",
+        "events/SDL_windowevents.c",
+        "events/imKStoUCS.c",
+        // TODO ...
+
+        // Fileystem
+        "filesystem/SDL_filesystem.c",
+        "filesystem/dummy/SDL_sysfilesystem.c",
+        "filesystem/dummy/SDL_sysfsops.c",
+        // TODO ...
+
+        // GPU
+        "gpu/SDL_gpu.c",
+        // TODO ...
+
+        // Haptic
+        "haptic/SDL_haptic.c",
+        "haptic/dummy/SDL_syshaptic.c",
+        // TODO ...
+
+        // Hidapi
+        "hidapi/SDL_hidapi.c",
+        // TODO ...
+
+        // IO
+        "io/generic/SDL_asyncio_generic.c",
+        "io/SDL_asyncio.c",
+        "io/SDL_iostream.c",
+
+        // Joystick
+        "joystick/SDL_gamepad.c",
+        "joystick/SDL_joystick.c",
+        "joystick/SDL_steam_virtual_gamepad.c",
+        "joystick/controller_type.c",
+        "joystick/dummy/SDL_sysjoystick.c",
+        // TODO ...
+
+        // Libm
+        "libm/e_atan2.c",
+        "libm/e_exp.c",
+        "libm/e_fmod.c",
+        "libm/e_log.c",
+        "libm/e_log10.c",
+        "libm/e_pow.c",
+        "libm/e_rem_pio2.c",
+        "libm/e_sqrt.c",
+        "libm/k_cos.c",
+        "libm/k_rem_pio2.c",
+        "libm/k_sin.c",
+        "libm/k_tan.c",
+        "libm/s_atan.c",
+        "libm/s_copysign.c",
+        "libm/s_cos.c",
+        "libm/s_fabs.c",
+        "libm/s_floor.c",
+        "libm/s_isinf.c",
+        "libm/s_isinff.c",
+        "libm/s_isnan.c",
+        "libm/s_isnanf.c",
+        "libm/s_modf.c",
+        "libm/s_scalbn.c",
+        "libm/s_sin.c",
+        "libm/s_tan.c",
+
+        // Loadso
+        "loadso/dummy/SDL_sysloadso.c",
+
+        // Locale
+        "locale/SDL_locale.c",
+        "locale/dummy/SDL_syslocale.c",
+        // TODO ...
+
+        // Main
+        "main/SDL_main_callbacks.c",
+        "main/SDL_runapp.c",
+        // TODO ...
+
+        // Misc
+        "misc/SDL_libusb.c",
+        "misc/SDL_url.c",
+        "misc/dummy/SDL_sysurl.c",
+        // TODO ...
+
+        // Notification
+        // "notification/SDL_notification.c",
+        // TODO ...
+
+        // Power
+        "power/SDL_power.c",
+        // TODO ...
+
+        // Process
+        "process/SDL_process.c",
+        "process/dummy/SDL_dummyprocess.c",
+        // TODO ...
+
+        // Render
+        "render/SDL_render.c",
+        "render/SDL_render_unsupported.c",
+        "render/SDL_yuv_sw.c",
+        // TODO ...
+
+        // Sensor
+        "sensor/SDL_sensor.c",
+        "sensor/dummy/SDL_dummysensor.c",
+        // TODO ...
+
+        // Stdlib
+        "stdlib/SDL_crc16.c",
+        "stdlib/SDL_crc32.c",
+        "stdlib/SDL_getenv.c",
+        "stdlib/SDL_iconv.c",
+        "stdlib/SDL_malloc.c",
+        "stdlib/SDL_memcpy.c",
+        "stdlib/SDL_memmove.c",
+        "stdlib/SDL_memset.c",
+        "stdlib/SDL_mslibc.c",
+        "stdlib/SDL_murmur3.c",
+        "stdlib/SDL_qsort.c",
+        "stdlib/SDL_random.c",
+        "stdlib/SDL_stdlib.c",
+        "stdlib/SDL_string.c",
+        "stdlib/SDL_strtokr.c",
+
+        // Storage
+        "storage/SDL_storage.c",
+        "storage/generic/SDL_genericstorage.c",
+
+        // Thread
+        "thread/generic/SDL_syscond.c",
+        "thread/generic/SDL_sysmutex.c",
+        "thread/generic/SDL_sysrwlock.c",
+        "thread/generic/SDL_syssem.c",
+        "thread/generic/SDL_systhread.c",
+        "thread/generic/SDL_systls.c",
+        "thread/SDL_thread.c",
+        // TODO ...
+
+        // Time
+        "time/SDL_time.c",
+        // TODO ...
+
+        // Timer
+        "timer/SDL_timer.c",
+        // TODO...
+
+        // Tray
+        "tray/SDL_tray_utils.c",
+        "tray/dummy/SDL_tray.c",
+        // TODO ...
+
+        // Video
+        "video/dummy/SDL_nullevents.c",
+        "video/dummy/SDL_nullframebuffer.c",
+        "video/dummy/SDL_nullvideo.c",
+        "video/SDL_RLEaccel.c",
+        "video/SDL_blit.c",
+        "video/SDL_blit_0.c",
+        "video/SDL_blit_1.c",
+        "video/SDL_blit_A.c",
+        "video/SDL_blit_N.c",
+        "video/SDL_blit_auto.c",
+        "video/SDL_blit_copy.c",
+        "video/SDL_blit_slow.c",
+        "video/SDL_bmp.c",
+        "video/SDL_clipboard.c",
+        "video/SDL_egl.c",
+        "video/SDL_fillrect.c",
+        "video/SDL_pixels.c",
+        "video/SDL_rect.c",
+        "video/SDL_rotate.c",
+        "video/SDL_stb.c",
+        "video/SDL_stretch.c",
+        "video/SDL_surface.c",
+        "video/SDL_video.c",
+        "video/SDL_video_unsupported.c",
+        "video/SDL_vulkan_utils.c",
+        "video/SDL_yuv.c",
+        // TODO ...
+
+        "SDL.c",
+        "SDL_assert.c",
+        "SDL_error.c",
+        "SDL_guid.c",
+        "SDL_hashtable.c",
+        "SDL_hints.c",
+        "SDL_list.c",
+        "SDL_log.c",
+        "SDL_properties.c",
+        "SDL_utils.c",
+    },
+    .windows = .{
+        .audio = .{
+            .directsound = .{
+                "audio/directsound/SDL_directsound.c",
+            },
+            .wasapi = .{
+                "audio/wasapi/SDL_wasapi.c",
+            },
+            .dsp = .{
+                "audio/dsp/SDL_dspaudio.c",
+            },
+        },
+        .common = .{
+            // Core
+            "core/windows/SDL_gameinput.cpp",
+            "core/windows/SDL_hid.c",
+            "core/windows/SDL_immdevice.c",
+            "core/windows/SDL_windows.c",
+            "core/windows/SDL_xinput.c",
+            "core/windows/pch.c",
+            "core/windows/pch_cpp.cpp",
+
+            // Dialog
+            "dialog/windows/SDL_windowsdialog.c",
+
+            // Filesystem
+            "filesystem/windows/SDL_sysfilesystem.c",
+            "filesystem/windows/SDL_sysfsops.c",
+
+            // IO
+            "io/windows/SDL_asyncio_windows_ioring.c",
+
+            // LoadSO
+            "loadso/windows/SDL_sysloadso.c",
+
+            // Locale
+            "locale/windows/SDL_syslocale.c",
+
+            // Main
+            "main/windows/SDL_sysmain_runapp.c",
+
+            // Misc
+            "misc/windows/SDL_sysurl.c",
+
+            // Notification
+            // "notification/windows/SDL_windowsnotification.c",
+
+            // Power
+            "power/windows/SDL_syspower.c",
+
+            // Process
+            "process/windows/SDL_windowsprocess.c",
+
+            // Sensor
+            "sensor/windows/SDL_windowssensor.c",
+
+            // Thread
+            "thread/windows/SDL_syscond_cv.c",
+            "thread/windows/SDL_sysmutex.c",
+            "thread/windows/SDL_sysrwlock_srw.c",
+            "thread/windows/SDL_syssem.c",
+            "thread/windows/SDL_systhread.c",
+            "thread/windows/SDL_systls.c",
+
+            // Time
+            "time/windows/SDL_systime.c",
+
+            // Timer
+            "timer/windows/SDL_systimer.c",
+
+            // Tray
+            "tray/windows/SDL_tray.c",
+        },
+        .haptic = .{
+            "haptic/windows/SDL_dinputhaptic.c",
+            "haptic/windows/SDL_windowshaptic.c",
+        },
+        .hidapi = .{
+            "hidapi/windows/hid.c",
+            "hidapi/windows/hidapi_descriptor_reconstruct.c",
+        },
+        .joystick = .{
+            "joystick/windows/SDL_dinputjoystick.c",
+            "joystick/windows/SDL_rawinputjoystick.c",
+            "joystick/windows/SDL_windows_gaming_input.c",
+            "joystick/windows/SDL_windowsjoystick.c",
+            "joystick/windows/SDL_xinputjoystick.c",
+        },
+        .video = .{
+            "video/windows/SDL_windowsclipboard.c",
+            "video/windows/SDL_windowsevents.c",
+            "video/windows/SDL_windowsframebuffer.c",
+            "video/windows/SDL_windowsgameinput.cpp",
+            "video/windows/SDL_windowskeyboard.c",
+            "video/windows/SDL_windowsmessagebox.c",
+            "video/windows/SDL_windowsmodes.c",
+            "video/windows/SDL_windowsmouse.c",
+            "video/windows/SDL_windowsopengl.c",
+            "video/windows/SDL_windowsopengles.c",
+            "video/windows/SDL_windowsrawinput.c",
+            "video/windows/SDL_windowsshape.c",
+            "video/windows/SDL_windowsvideo.c",
+            "video/windows/SDL_windowsvulkan.c",
+            "video/windows/SDL_windowswindow.c",
+        },
+    },
+    .linux = .{
+        .audio = .{
+            .alsa = .{
+                "audio/alsa/SDL_alsa_audio.c",
+            },
+            .pipewire = .{
+                "audio/pipewire/SDL_pipewire.c",
+            },
+            .pulseaudio = .{
+                "audio/pulseaudio/SDL_pulseaudio.c",
+            },
+            .jack = .{
+                "audio/jack/SDL_jack.c",
+            },
+        },
+        .common = .{
+            "camera/pipewire/SDL_camera_pipewire.c",
+        },
+    },
+    .android = .{
+        .audio = .{
+            .aaudio = .{
+                "audio/aaudio'SDL_aaudio.c",
+            },
+            .opensles = .{
+                "audio/openslES/SDL_openslES.c",
+            },
+        },
+        .common = .{
+            "camera/android/SDL_camera_android.c",
+        },
+    },
+    .apple = .{
+        .audio = .{
+            "audio/coreaudio/SDL_coreaudio.m",
+        },
+        .common = .{
+            "audio/coremedia/SDL_camera_coremedia.m",
+        },
+    },
+    .wasm = .{
+        .audio = .{
+            "audio/emscripten/SDL_emscriptenaudio.c",
+        },
+        .common = .{
+            "audio/emscripten/SDL_camera_emscripten.c",
+        },
+    },
+    .haiku = .{
+        "audio/SDL_haikuaudio.cc",
+    },
+    .n3ds = .{
+        .audio = .{
+            "audio/n3ds/SDL_n3dsaudio.c",
+        },
+    },
+    .netbsd = .{
+        .audio = .{
+            "audio/SDL_netbsdaudio.c",
+        },
+    },
+    .symbian = .{
+        .audio = .{
+            "audio/ngage/SDL_ngageaudio.c",
+            "audio/ngage/SDL_ngageaudio.cpp",
+        },
+    },
+    .playstation2 = .{
+        .audio = .{
+            "audio/ps2/SDL_ps2audio.c",
+        },
+    },
+    .psp = .{
+        .audio = .{
+            "audio/psp/SDL_pspaudio.c",
+        },
+    },
+    .qnx = .{
+        .audio = .{
+            "audio/qnx/SDL_qsa_audio.c",
+        },
+    },
+    .openbsd = .{
+        .audio = .{
+            "audio/sndio/SDL_sndioaudio.c",
+        },
+    },
+    .vita = .{
+        .audio = .{
+            "audio/vita/SDL_vitaaudio.c",
+        },
+        .common = .{
+            "camera/vita/SDL_camera_vita.c",
+        },
+    },
+    .gpu = .{
+        .d3d12 = .{
+            // GPU
+            "gpu/d3d12/SDL_gpu_d3d12.c",
+
+            // Render
+            "render/d3d12/SDL_render_d3d12.c",
+            "render/d3d12/SDL_render_d3d12_xbox.cpp",
+            "render/d3d12/SDL_shaders_d3d12.c",
+            "render/d3d12/SDL_shaders_d3d12_xboxone.cpp",
+            "render/d3d12/SDL_shaders_d3d12_xboxseries.cpp",
+        },
+        .metal = .{
+            "gpu/metal/SDL_gpu_metal.m",
+        },
+        .vulkan = .{
+            // GPU
+            "gpu/vulkan/SDL_gpu_vulkan.c",
+
+            // Render
+            "render/vulkan/SDL_render_vulkan.c",
+            "render/vulkan/SDL_shaders_vulkan.c",
+        },
+    },
+}
