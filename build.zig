@@ -29,7 +29,7 @@ pub fn build(b: *std.Build) !void {
 
     mod.addCSourceFiles(.{
         .root = upstream.path("src"),
-        .files = &sdl.vulkan,
+        .files = &sdl.gpu.vulkan,
     });
 
     if (target.result.abi == .gnu) {
